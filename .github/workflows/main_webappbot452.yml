@@ -2,7 +2,9 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
 name: Build and deploy ASP.Net Core app to Azure Web App - webappbot452
-
+defaults:
+  run:
+    working-directory: './samples/csharp_dotnetcore/02.echo-bot/EchoBot.csproj'
 on:
   push:
     branches:
